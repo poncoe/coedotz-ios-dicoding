@@ -10,7 +10,7 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     @IBOutlet weak var btnFollowed: UIButton!
-    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var profileImageView:UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()

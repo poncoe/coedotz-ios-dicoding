@@ -133,7 +133,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnFollowed" destination="vuT-NW-rEY" id="0PM-78-rZ7"/>
+                        <outlet property="btnFollowed" destination="vuT-NW-rEY" id="lbS-9e-1bv"/>
                         <outlet property="profileImageView" destination="4aO-O5-w9v" id="3PV-kR-Ma0"/>
                     </connections>
                 </viewController>
