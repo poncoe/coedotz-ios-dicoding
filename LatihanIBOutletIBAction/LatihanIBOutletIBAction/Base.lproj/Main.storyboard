@@ -135,6 +135,8 @@
                     <connections>
                         <outlet property="btnFollowed" destination="vuT-NW-rEY" id="lbS-9e-1bv"/>
                         <outlet property="profileImageView" destination="4aO-O5-w9v" id="3PV-kR-Ma0"/>
+                        <outlet property="txtDesc" destination="JVA-WN-c5l" id="DLQ-sD-DlV"/>
+                        <outlet property="txtName" destination="Xdl-ej-P64" id="UbZ-K4-K49"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
