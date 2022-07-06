@@ -26,9 +26,15 @@
                             <constraint firstAttribute="width" constant="100" id="zfW-UV-FY3"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-Ri-oS2">
-                        <rect key="frame" x="116" y="46" width="180" height="22.5"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VSD-Ri-oS2">
+                        <rect key="frame" x="116" y="36" width="180" height="22.5"/>
                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="desc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sMr-DM-n1F">
+                        <rect key="frame" x="116" y="66" width="37" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -37,12 +43,17 @@
                     <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VSD-Ri-oS2" secondAttribute="trailing" constant="8" id="0fY-IR-asc"/>
                     <constraint firstItem="VSD-Ri-oS2" firstAttribute="centerY" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="6eI-5t-VPX"/>
                     <constraint firstAttribute="bottom" secondItem="Ldx-Ba-Sn2" secondAttribute="bottom" constant="8" id="8BG-DN-jEo"/>
+                    <constraint firstItem="sMr-DM-n1F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="21" id="9LP-fH-GGa"/>
+                    <constraint firstItem="sMr-DM-n1F" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="11" id="9UA-Uh-BhR"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="sMr-DM-n1F" secondAttribute="bottom" constant="13" id="CUG-EY-643"/>
                     <constraint firstItem="VSD-Ri-oS2" firstAttribute="leading" secondItem="Ldx-Ba-Sn2" secondAttribute="trailing" constant="8" id="CsF-Fu-Zci"/>
+                    <constraint firstItem="sMr-DM-n1F" firstAttribute="leading" secondItem="Ldx-Ba-Sn2" secondAttribute="trailing" constant="8" id="G87-i5-c4K"/>
                     <constraint firstItem="Ldx-Ba-Sn2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="KzX-RS-8kW"/>
                     <constraint firstAttribute="trailingMargin" secondItem="VSD-Ri-oS2" secondAttribute="trailing" constant="8" id="M9D-iC-Gl3"/>
                     <constraint firstAttribute="bottom" secondItem="Ldx-Ba-Sn2" secondAttribute="bottom" constant="8" id="P3h-pj-RBB"/>
                     <constraint firstAttribute="bottom" secondItem="Ldx-Ba-Sn2" secondAttribute="bottom" constant="8" id="PCd-lU-MdJ"/>
                     <constraint firstItem="Ldx-Ba-Sn2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="PCx-oC-pTu"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="sMr-DM-n1F" secondAttribute="trailing" constant="8" id="Qqj-5G-LFa"/>
                     <constraint firstItem="VSD-Ri-oS2" firstAttribute="leading" secondItem="Ldx-Ba-Sn2" secondAttribute="trailing" constant="8" id="US8-nn-Hnl"/>
                     <constraint firstAttribute="bottomMargin" secondItem="VSD-Ri-oS2" secondAttribute="bottom" constant="35" id="Uab-2k-y4R"/>
                     <constraint firstItem="Ldx-Ba-Sn2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YNM-rX-Yfj"/>
@@ -50,12 +61,14 @@
                     <constraint firstItem="Ldx-Ba-Sn2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="b2D-Kx-isQ"/>
                     <constraint firstItem="VSD-Ri-oS2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="35" id="gJI-Sw-0TI"/>
                     <constraint firstAttribute="bottomMargin" secondItem="VSD-Ri-oS2" secondAttribute="bottom" constant="36.5" id="jdI-tr-jjw"/>
+                    <constraint firstItem="sMr-DM-n1F" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" constant="21" id="uYW-Gq-ggh"/>
                     <constraint firstAttribute="bottomMargin" secondItem="Ldx-Ba-Sn2" secondAttribute="bottom" constant="8" id="vJv-Oo-7oC"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="academyImageView" destination="Ldx-Ba-Sn2" id="4sF-DJ-h1b"/>
+                <outlet property="txtDesc" destination="sMr-DM-n1F" id="WmF-sV-9wW"/>
                 <outlet property="txtLabel" destination="VSD-Ri-oS2" id="7wC-Cf-V3M"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="103.125"/>

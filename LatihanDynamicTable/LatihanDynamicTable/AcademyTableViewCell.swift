@@ -13,6 +13,9 @@ class AcademyTableViewCell: UITableViewCell {
     
     @IBOutlet weak var txtLabel: UILabel!
     
+    //challenge
+    @IBOutlet weak var txtDesc: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

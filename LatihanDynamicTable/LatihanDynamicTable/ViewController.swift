@@ -56,6 +56,9 @@ extension ViewController: UITableViewDataSource {
             cell.txtLabel.text = academy.name
             cell.academyImageView.image = academy.image
             
+            //challenge
+            cell.txtDesc.text = academy.description
+            
             // MARK: Mengembalikan cell agar bisa ditampilkan dalam TableView.
             return cell
         } else {
