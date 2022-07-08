@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13B021CA2878593800851773 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B021C92878593800851773 /* DetailViewController.swift */; };
 		13B6D644287609CD00B9E5BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6D643287609CD00B9E5BF /* AppDelegate.swift */; };
 		13B6D646287609CD00B9E5BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6D645287609CD00B9E5BF /* SceneDelegate.swift */; };
 		13B6D648287609CD00B9E5BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B6D647287609CD00B9E5BF /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		13B021C92878593800851773 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		13B6D640287609CD00B9E5BF /* LatihanSegueDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LatihanSegueDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B6D643287609CD00B9E5BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13B6D645287609CD00B9E5BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,11 +68,12 @@
 				13B6D645287609CD00B9E5BF /* SceneDelegate.swift */,
 				13B6D647287609CD00B9E5BF /* ViewController.swift */,
 				13B6D65828760D9500B9E5BF /* AcademyModel.swift */,
+				13B6D661287610FA00B9E5BF /* AcademyTableViewCell.swift */,
+				13B021C92878593800851773 /* DetailViewController.swift */,
 				13B6D649287609CD00B9E5BF /* Main.storyboard */,
 				13B6D64C287609D000B9E5BF /* Assets.xcassets */,
 				13B6D64E287609D000B9E5BF /* LaunchScreen.storyboard */,
 				13B6D651287609D000B9E5BF /* Info.plist */,
-				13B6D661287610FA00B9E5BF /* AcademyTableViewCell.swift */,
 				13B6D662287610FA00B9E5BF /* AcademyTableViewCell.xib */,
 			);
 			path = LatihanSegueDetail;
@@ -150,6 +153,7 @@
 				13B6D648287609CD00B9E5BF /* ViewController.swift in Sources */,
 				13B6D644287609CD00B9E5BF /* AppDelegate.swift in Sources */,
 				13B6D65928760D9500B9E5BF /* AcademyModel.swift in Sources */,
+				13B021CA2878593800851773 /* DetailViewController.swift in Sources */,
 				13B6D646287609CD00B9E5BF /* SceneDelegate.swift in Sources */,
 				13B6D663287610FA00B9E5BF /* AcademyTableViewCell.swift in Sources */,
 			);
