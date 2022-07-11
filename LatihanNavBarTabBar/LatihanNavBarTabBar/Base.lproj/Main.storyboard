@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ulk-XP-RcW">
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Kelas Dicoding-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LatihanSegueDetail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LatihanNavBarTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yFL-k4-bo0">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="436"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -30,6 +30,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yFL-k4-bo0" secondAttribute="bottom" id="vUW-aI-tqi"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Kelas Dicoding" id="8Ra-qB-nJQ">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="X0Q-2c-iMj"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="globe" catalog="system" id="Bis-28-8Fl">
+                            <connections>
+                                <action selector="goToWebsite:" destination="BYZ-38-t0r" id="93f-c2-Oka"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableAcademyView" destination="yFL-k4-bo0" id="abd-ZV-bGe"/>
                         <segue destination="a5d-8e-Lrw" kind="show" identifier="moveToDetail" id="qtU-Lg-Su3"/>
@@ -37,37 +45,37 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="64"/>
+            <point key="canvasLocation" x="1136.25" y="63.75"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="94b-iS-Ks3">
             <objects>
-                <viewController id="a5d-8e-Lrw" customClass="DetailViewController" customModule="LatihanSegueDetail" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="a5d-8e-Lrw" customClass="DetailViewController" customModule="LatihanNavBarTabBar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5OY-wf-rt6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="460"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BIo-Wp-uys">
-                                <rect key="frame" x="60" y="24" width="200" height="200"/>
+                                <rect key="frame" x="60" y="68" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="4QE-ZB-WSJ"/>
                                     <constraint firstAttribute="width" constant="200" id="Cg3-c1-f25"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEC-qs-a1S">
-                                <rect key="frame" x="12" y="236" width="296" height="25.5"/>
+                                <rect key="frame" x="12" y="280" width="296" height="25.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kz9-8k-9eQ">
-                                <rect key="frame" x="12" y="273.5" width="296" height="20.5"/>
+                                <rect key="frame" x="12" y="317.5" width="296" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRW-Rv-kvY">
-                                <rect key="frame" x="60" y="404" width="200" height="34"/>
+                                <rect key="frame" x="60" y="424" width="200" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <state key="normal" title="Kembali"/>
                                 <connections>
@@ -104,10 +112,29 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlK-F8-V9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ya4-3U-Tmq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="813.75" y="63.75"/>
+            <point key="canvasLocation" x="1811.25" y="63.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6Sy-t4-736">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ulk-XP-RcW" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oRH-SP-4ZM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1kH-mY-MFp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yu8-m3-9mB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="437" y="64"/>
         </scene>
     </scenes>
     <resources>
+        <image name="globe" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
