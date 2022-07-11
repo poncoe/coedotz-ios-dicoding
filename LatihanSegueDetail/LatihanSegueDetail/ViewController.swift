@@ -25,6 +25,8 @@ class ViewController: UIViewController {
             forCellReuseIdentifier: "AcademyCell" // Isi dengan Identifier Cell yang telah ditentukan
         )
     }
+    
+    @IBAction func myUnwindSegue(_ sender: UIStoryboardSegue) { }
 }
 
 // MARK: Mengimplementasikan UITableViewDataSource ke dalam ViewController.
