@@ -74,14 +74,6 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRW-Rv-kvY">
-                                <rect key="frame" x="60" y="375" width="200" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Kembali"/>
-                                <connections>
-                                    <segue destination="ya4-3U-Tmq" kind="unwind" unwindAction="myUnwindSegue:" id="j61-25-usW"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="P7o-l6-3E3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -93,11 +85,8 @@
                             <constraint firstItem="BIo-Wp-uys" firstAttribute="centerX" secondItem="P7o-l6-3E3" secondAttribute="centerX" id="4H8-OC-N7m"/>
                             <constraint firstItem="wEC-qs-a1S" firstAttribute="top" secondItem="BIo-Wp-uys" secondAttribute="bottom" constant="12" id="4jR-UT-fwe"/>
                             <constraint firstItem="P7o-l6-3E3" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kz9-8k-9eQ" secondAttribute="bottom" constant="12" id="HWw-jx-0EN"/>
-                            <constraint firstItem="P7o-l6-3E3" firstAttribute="bottom" secondItem="mRW-Rv-kvY" secondAttribute="bottom" constant="22" id="LMc-8B-T7P"/>
                             <constraint firstItem="kz9-8k-9eQ" firstAttribute="top" secondItem="wEC-qs-a1S" secondAttribute="bottom" constant="12" id="TtO-7I-j77"/>
-                            <constraint firstItem="mRW-Rv-kvY" firstAttribute="trailing" secondItem="BIo-Wp-uys" secondAttribute="trailing" id="XnZ-JE-6CF"/>
                             <constraint firstItem="BIo-Wp-uys" firstAttribute="centerX" secondItem="5OY-wf-rt6" secondAttribute="centerX" id="YdH-80-t48"/>
-                            <constraint firstItem="mRW-Rv-kvY" firstAttribute="leading" secondItem="BIo-Wp-uys" secondAttribute="leading" id="dpt-kh-Isl"/>
                             <constraint firstItem="BIo-Wp-uys" firstAttribute="top" secondItem="P7o-l6-3E3" secondAttribute="top" constant="24" id="iGS-J5-iZN"/>
                             <constraint firstItem="kz9-8k-9eQ" firstAttribute="top" secondItem="wEC-qs-a1S" secondAttribute="bottom" constant="12" id="ndB-xc-1lB"/>
                         </constraints>
@@ -110,7 +99,6 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NlK-F8-V9w" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <exit id="ya4-3U-Tmq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2808.75" y="63.75"/>
         </scene>
